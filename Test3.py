@@ -93,9 +93,12 @@ class Window(QMainWindow, Ui_MainWindow):
 			elif _Keg_Data[count]._KegSize == "2":
 				self.Keg_Volume_Label[count].setText("5.0")
 
-		# Zero out a couple for labels that will be dynamic based on Keg levels
+		# Zero out a couple for labels that will be dynamic based on Keg levels, pressure and temperature
 			self.Keg_Qty_Label[count].setText("0")
 			self.Mugs_Label[count].setText("0")
+			self.Keg_Press_Label[count].setText("0")
+			self.Keg_Temp_Label[count].setText("0")
+			self.Keg_Level_Bar[count].setValue(0)
 
 	def Display_Kegs(self,_Keg_Data):
 		# Check _Active status of each keg and show or hide keg data accordingly
