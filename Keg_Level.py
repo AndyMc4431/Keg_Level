@@ -305,7 +305,7 @@ class Ui_MainWindow(object):
         self.Keg_Temp_Label.append(_beerlabel(self.frame_2, 270, 60, 40, 25, 12))
         self.Keg_Temp_Label[0].setObjectName("Keg_Temp_Label_0")
 
-        # Create Background frame and objects for when keg is disabled
+        '''# Create Background frame and objects for when keg is disabled
         # Create the Master frame for this disabled keg
         self.frame_noKeg_0 = QtWidgets.QFrame(self.frame_main) 
         self.frame_noKeg_0.setGeometry(QtCore.QRect(10, 10, 460, 850))
@@ -326,7 +326,7 @@ class Ui_MainWindow(object):
         self.nKeg_Fill_Level_0 = QtWidgets.QLabel(self.frame_noKeg_0)
         self.nKeg_Fill_Level_0.setGeometry(QtCore.QRect(215, 267, 40, 434))
         self.nKeg_Fill_Level_0.setStyleSheet(FrameStyle)
-        self.nKeg_Fill_Level_0.setObjectName("nKeg_Fill_Level_0")
+        self.nKeg_Fill_Level_0.setObjectName("nKeg_Fill_Level_0")'''
 
 
         
@@ -515,7 +515,7 @@ class Ui_MainWindow(object):
         self.Keg_Temp_Label.append(_beerlabel(self.frame_7, 270, 60, 40, 25, 12))
         self.Keg_Temp_Label[1].setObjectName("Keg_Temp_Label_1")       
 
-        # Create Background frame and objects for when keg is disabled
+        '''# Create Background frame and objects for when keg is disabled
         # Create the Master frame for this disabled keg
         self.frame_noKeg_1 = QtWidgets.QFrame(self.frame_main) 
         self.frame_noKeg_1.setGeometry(QtCore.QRect(500, 10, 460, 850))
@@ -536,7 +536,7 @@ class Ui_MainWindow(object):
         self.nKeg_Fill_Level_1 = QtWidgets.QLabel(self.frame_noKeg_1)
         self.nKeg_Fill_Level_1.setGeometry(QtCore.QRect(215, 267, 40, 434))
         self.nKeg_Fill_Level_1.setStyleSheet(FrameStyle)
-        self.nKeg_Fill_Level_1.setObjectName("nKeg_Fill_Level_1")
+        self.nKeg_Fill_Level_1.setObjectName("nKeg_Fill_Level_1")'''
        
         
         # Set up third keg widgets.
@@ -725,7 +725,7 @@ class Ui_MainWindow(object):
         self.Keg_Temp_Label.append(_beerlabel(self.frame_9, 270, 60, 40, 25, 12))
         self.Keg_Temp_Label[2].setObjectName("Keg_Temp_Label_2")        
        
-        # Create Background frame and objects for when keg is disabled
+        '''# Create Background frame and objects for when keg is disabled
         # Create the Master frame for this disabled keg
         self.frame_noKeg_2 = QtWidgets.QFrame(self.frame_main) 
         self.frame_noKeg_2.setGeometry(QtCore.QRect(990, 10, 460, 850))
@@ -746,7 +746,7 @@ class Ui_MainWindow(object):
         self.nKeg_Fill_Level_2 = QtWidgets.QLabel(self.frame_noKeg_2)
         self.nKeg_Fill_Level_2.setGeometry(QtCore.QRect(215, 267, 40, 434))
         self.nKeg_Fill_Level_2.setStyleSheet(FrameStyle)
-        self.nKeg_Fill_Level_2.setObjectName("nKeg_Fill_Level_2")        
+        self.nKeg_Fill_Level_2.setObjectName("nKeg_Fill_Level_2")'''      
         
         
 

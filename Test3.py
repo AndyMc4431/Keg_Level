@@ -104,22 +104,22 @@ class Window(QMainWindow, Ui_MainWindow):
 		# Check _Active status of each keg and show or hide keg data accordingly
 		if _Keg_Data[0]._Active:
 			self.frame_Keg_0.show()
-			self.frame_noKeg_0.hide()
+			#self.frame_noKeg_0.hide()
 		else:
 			self.frame_Keg_0.hide()
-			self.frame_noKeg_0.show()
+			#self.frame_noKeg_0.show()
 		if _Keg_Data[1]._Active:
 			self.frame_Keg_1.show()
-			self.frame_noKeg_1.hide()
+			#self.frame_noKeg_1.hide()
 		else:
 			self.frame_Keg_1.hide()
-			self.frame_noKeg_1.show()
+			#self.frame_noKeg_1.show()
 		if _Keg_Data[2]._Active:
 			self.frame_Keg_2.show()
-			self.frame_noKeg_2.hide()
+			#self.frame_noKeg_2.hide()
 		else:
 			self.frame_Keg_2.hide()
-			self.frame_noKeg_2.show()
+			#self.frame_noKeg_2.show()
 		
 		
 	
