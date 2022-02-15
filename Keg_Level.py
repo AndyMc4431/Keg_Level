@@ -144,13 +144,13 @@ class Ui_MainWindow(object):
         self.Beer_Label2[0].setObjectName("Beer_Label_2")
 
         # Create area for Beer Details (Above the Keg)
-        self.frame_3 = QtWidgets.QFrame(self.frame_Keg_0)
-        self.frame_3.setGeometry(QtCore.QRect(30, 100, 400, 80))
-        self.frame_3.setStyleSheet("background-color: rgb(240, 237, 229);")
-        self.frame_3.setFrameShape(QtWidgets.QFrame.WinPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.frame_3.setObjectName("frame_3")
-        self.label_6 = QtWidgets.QLabel(self.frame_3)
+        self.frame_2 = QtWidgets.QFrame(self.frame_Keg_0)
+        self.frame_2.setGeometry(QtCore.QRect(30, 100, 400, 80))
+        self.frame_2.setStyleSheet("background-color: rgb(240, 237, 229);")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.WinPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.frame_2.setObjectName("frame_2")
+        self.label_6 = QtWidgets.QLabel(self.frame_2)
         self.label_6.setGeometry(QtCore.QRect(40, 10, 40, 25))
         font.setBold(False)
         font.setPointSize(12)
@@ -158,26 +158,26 @@ class Ui_MainWindow(object):
         self.label_6.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_6.setText("ABV:")
         self.label_6.setObjectName("label_6")
-        self.label_7 = QtWidgets.QLabel(self.frame_3)
+        self.label_7 = QtWidgets.QLabel(self.frame_2)
         self.label_7.setGeometry(QtCore.QRect(160, 10, 40, 25))
         self.label_7.setFont(font)
         self.label_7.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_7.setText("IBU:")
         self.label_7.setObjectName("label_7")
-        self.label_8 = QtWidgets.QLabel(self.frame_3)
+        self.label_8 = QtWidgets.QLabel(self.frame_2)
         self.label_8.setGeometry(QtCore.QRect(260, 10, 47, 25))
         self.label_8.setFont(font)
         self.label_8.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.label_8.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_8.setText("SRM:")
         self.label_8.setObjectName("label_8")
-        self.label_10 = QtWidgets.QLabel(self.frame_3)
+        self.label_10 = QtWidgets.QLabel(self.frame_2)
         self.label_10.setGeometry(QtCore.QRect(25, 30, 100, 25))
         self.label_10.setFont(font)
         self.label_10.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_10.setObjectName("label_10")
         self.label_10.setText("Brew Date: ")
-        self.label_11 = QtWidgets.QLabel(self.frame_3)
+        self.label_11 = QtWidgets.QLabel(self.frame_2)
         self.label_11.setGeometry(QtCore.QRect(25, 50, 100, 25))
         self.label_11.setFont(font)
         self.label_11.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
@@ -185,23 +185,23 @@ class Ui_MainWindow(object):
         self.label_11.setObjectName("label_11")
 
         # Display ABV
-        self.ABV_Label.append(_beerlabel(self.frame_3, 80, 10, 35, 25, 12))
+        self.ABV_Label.append(_beerlabel(self.frame_2, 80, 10, 35, 25, 12))
         self.ABV_Label[0].setObjectName("ABV_Label_0")
 
         # Display IBU
-        self.IBU_Label.append(_beerlabel(self.frame_3, 200, 10, 35, 25, 12))
+        self.IBU_Label.append(_beerlabel(self.frame_2, 200, 10, 35, 25, 12))
         self.IBU_Label[0].setObjectName("IBU_Label_0")
 
         # Display SRM
-        self.SRM_Label.append(_beerlabel(self.frame_3, 300, 10, 35, 25, 12))
+        self.SRM_Label.append(_beerlabel(self.frame_2, 300, 10, 35, 25, 12))
         self.SRM_Label[0].setObjectName("SRM_Label_0")
         
         # Display Brew Date
-        self.Brew_Date_Label.append(_beerlabel(self.frame_3, 140, 30, 150, 25, 12))
+        self.Brew_Date_Label.append(_beerlabel(self.frame_2, 140, 30, 150, 25, 12))
         self.Brew_Date_Label[0].setObjectName("Brew_Date_Label_0")
           
         # Display Date beer was Kegged
-        self.Keg_Date_Label.append(_beerlabel(self.frame_3, 140, 50, 150, 25, 12))        
+        self.Keg_Date_Label.append(_beerlabel(self.frame_2, 140, 50, 150, 25, 12))        
         self.Keg_Date_Label[0].setObjectName("Keg_Date_Label_0")
 
         # Display Keg Image
@@ -224,61 +224,61 @@ class Ui_MainWindow(object):
         self.Keg_Level_Bar[0].setObjectName("Keg_Level_Bar[0]")
         
         # Create Area to display Keg Level Details below Keg image
-        self.frame_2 = QtWidgets.QFrame(self.frame_Keg_0)
-        self.frame_2.setGeometry(QtCore.QRect(30, 740, 400, 90))
-        self.frame_2.setStyleSheet("background-color: rgb(240, 237, 229);")
-        self.frame_2.setFrameShape(QtWidgets.QFrame.WinPanel)
-        self.frame_2.setFrameShadow(QtWidgets.QFrame.Sunken)
-        self.frame_2.setObjectName("frame_2")
-        self.label_12 = QtWidgets.QLabel(self.frame_2)
+        self.frame_3 = QtWidgets.QFrame(self.frame_Keg_0)
+        self.frame_3.setGeometry(QtCore.QRect(30, 740, 400, 90))
+        self.frame_3.setStyleSheet("background-color: rgb(240, 237, 229);")
+        self.frame_3.setFrameShape(QtWidgets.QFrame.WinPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Sunken)
+        self.frame_3.setObjectName("frame_3")
+        self.label_12 = QtWidgets.QLabel(self.frame_3)
         self.label_12.setGeometry(QtCore.QRect(20, 10, 95, 25))
         self.label_12.setFont(font)
         self.label_12.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_12.setText("Keg Volume: ")
         self.label_12.setObjectName("label_12")
-        self.label_13 = QtWidgets.QLabel(self.frame_2)
+        self.label_13 = QtWidgets.QLabel(self.frame_3)
         self.label_13.setGeometry(QtCore.QRect(225, 10, 75, 25))
         self.label_13.setFont(font)
         self.label_13.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_13.setText("Beer Left: ")
         self.label_13.setObjectName("label_13")
-        self.label_14 = QtWidgets.QLabel(self.frame_2)
+        self.label_14 = QtWidgets.QLabel(self.frame_3)
         self.label_14.setGeometry(QtCore.QRect(160, 10, 25, 25))
         self.label_14.setFont(font)
         self.label_14.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_14.setText("gal")
         self.label_14.setObjectName("label_14")
-        self.label_15 = QtWidgets.QLabel(self.frame_2)
+        self.label_15 = QtWidgets.QLabel(self.frame_3)
         self.label_15.setGeometry(QtCore.QRect(340, 10, 25, 25))
         self.label_15.setFont(font)
         self.label_15.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_15.setText("gal")
         self.label_15.setObjectName("label_15")
-        self.label_16 = QtWidgets.QLabel(self.frame_2)
+        self.label_16 = QtWidgets.QLabel(self.frame_3)
         self.label_16.setGeometry(QtCore.QRect(75, 35, 65, 25))
         self.label_16.setFont(font)
         self.label_16.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_16.setText("Approx")
         self.label_16.setObjectName("label_16")
-        self.label_17 = QtWidgets.QLabel(self.frame_2)
+        self.label_17 = QtWidgets.QLabel(self.frame_3)
         self.label_17.setGeometry(QtCore.QRect(180, 35, 135, 25))
         self.label_17.setFont(font)
         self.label_17.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_17.setText("mugs left to drink")
         self.label_17.setObjectName("label_17")
-        self.label_18 = QtWidgets.QLabel(self.frame_2)
+        self.label_18 = QtWidgets.QLabel(self.frame_3)
         self.label_18.setGeometry(QtCore.QRect(20, 60, 181, 25))
         self.label_18.setFont(font)
         self.label_18.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_18.setText("Keg Pressure and Temp:")      
         self.label_18.setObjectName("label_18")
-        self.label_19 = QtWidgets.QLabel(self.frame_2)
+        self.label_19 = QtWidgets.QLabel(self.frame_3)
         self.label_19.setGeometry(QtCore.QRect(235, 60, 30, 25))
         self.label_19.setFont(font)
         self.label_19.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_19.setText("psi")
         self.label_19.setObjectName("label_19")
-        self.label_20 = QtWidgets.QLabel(self.frame_2)
+        self.label_20 = QtWidgets.QLabel(self.frame_3)
         self.label_20.setGeometry(QtCore.QRect(313, 60, 30, 25))
         self.label_20.setFont(font)
         self.label_20.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
@@ -286,48 +286,24 @@ class Ui_MainWindow(object):
         self.label_20.setObjectName("label_20")
 
         # Display Keg Volume
-        self.Keg_Volume_Label.append(_beerlabel(self.frame_2, 120, 10, 40, 25, 12))
+        self.Keg_Volume_Label.append(_beerlabel(self.frame_3, 120, 10, 40, 25, 12))
         self.Keg_Volume_Label[0].setObjectName("Keg_Volume_Label_0")
 
         # Display Qty of Beer in the Keg
-        self.Keg_Qty_Label.append(_beerlabel(self.frame_2, 300, 10, 40, 25, 12))
+        self.Keg_Qty_Label.append(_beerlabel(self.frame_3, 300, 10, 40, 25, 12))
         self.Keg_Qty_Label[0].setObjectName("Keg_Qty_Label_0")
 
         # Display the number of 12 oz mugs left in the keg
-        self.Mugs_Label.append(_beerlabel(self.frame_2, 140, 35, 40, 25, 12))
+        self.Mugs_Label.append(_beerlabel(self.frame_3, 140, 35, 40, 25, 12))
         self.Mugs_Label[0].setObjectName("Mugs_Label_0")
 
         # Display the Keg Pressure
-        self.Keg_Press_Label.append(_beerlabel(self.frame_2,200, 60, 30, 25, 12))
+        self.Keg_Press_Label.append(_beerlabel(self.frame_3,200, 60, 30, 25, 12))
         self.Keg_Press_Label[0].setObjectName("Keg_Press_Level_0")
 
         #Display Keg Temperature
-        self.Keg_Temp_Label.append(_beerlabel(self.frame_2, 270, 60, 40, 25, 12))
+        self.Keg_Temp_Label.append(_beerlabel(self.frame_3, 270, 60, 40, 25, 12))
         self.Keg_Temp_Label[0].setObjectName("Keg_Temp_Label_0")
-
-        '''# Create Background frame and objects for when keg is disabled
-        # Create the Master frame for this disabled keg
-        self.frame_noKeg_0 = QtWidgets.QFrame(self.frame_main) 
-        self.frame_noKeg_0.setGeometry(QtCore.QRect(10, 10, 460, 850))
-        self.frame_noKeg_0.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_noKeg_0.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_noKeg_0.setObjectName("frame_noKeg_0")
-
-         # Display Keg Image
-        self.label_n0 = QtWidgets.QLabel(self.frame_noKeg_0)
-        self.label_n0.setGeometry(QtCore.QRect(30, 200, 400, 530))
-        self.label_n0.setText("")
-        self.label_n0.setPixmap(QtGui.QPixmap("Keg.png"))
-        self.label_n0.setScaledContents(True)
-        self.label_n0.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_n0.setObjectName("label_n0")
-        
-        # Create Background for Fill Level Progress Bar
-        self.nKeg_Fill_Level_0 = QtWidgets.QLabel(self.frame_noKeg_0)
-        self.nKeg_Fill_Level_0.setGeometry(QtCore.QRect(215, 267, 40, 434))
-        self.nKeg_Fill_Level_0.setStyleSheet(FrameStyle)
-        self.nKeg_Fill_Level_0.setObjectName("nKeg_Fill_Level_0")'''
-
 
         
        
@@ -515,28 +491,6 @@ class Ui_MainWindow(object):
         self.Keg_Temp_Label.append(_beerlabel(self.frame_7, 270, 60, 40, 25, 12))
         self.Keg_Temp_Label[1].setObjectName("Keg_Temp_Label_1")       
 
-        '''# Create Background frame and objects for when keg is disabled
-        # Create the Master frame for this disabled keg
-        self.frame_noKeg_1 = QtWidgets.QFrame(self.frame_main) 
-        self.frame_noKeg_1.setGeometry(QtCore.QRect(500, 10, 460, 850))
-        self.frame_noKeg_1.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_noKeg_1.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_noKeg_1.setObjectName("frame_noKeg_1")
-
-         # Display Keg Image
-        self.label_n1 = QtWidgets.QLabel(self.frame_noKeg_1)
-        self.label_n1.setGeometry(QtCore.QRect(30, 200, 400, 530))
-        self.label_n1.setText("")
-        self.label_n1.setPixmap(QtGui.QPixmap("Keg.png"))
-        self.label_n1.setScaledContents(True)
-        self.label_n1.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_n1.setObjectName("label_n1")
-        
-        # Create Background for Fill Level Progress Bar
-        self.nKeg_Fill_Level_1 = QtWidgets.QLabel(self.frame_noKeg_1)
-        self.nKeg_Fill_Level_1.setGeometry(QtCore.QRect(215, 267, 40, 434))
-        self.nKeg_Fill_Level_1.setStyleSheet(FrameStyle)
-        self.nKeg_Fill_Level_1.setObjectName("nKeg_Fill_Level_1")'''
        
         
         # Set up third keg widgets.
@@ -725,29 +679,7 @@ class Ui_MainWindow(object):
         self.Keg_Temp_Label.append(_beerlabel(self.frame_9, 270, 60, 40, 25, 12))
         self.Keg_Temp_Label[2].setObjectName("Keg_Temp_Label_2")        
        
-        '''# Create Background frame and objects for when keg is disabled
-        # Create the Master frame for this disabled keg
-        self.frame_noKeg_2 = QtWidgets.QFrame(self.frame_main) 
-        self.frame_noKeg_2.setGeometry(QtCore.QRect(990, 10, 460, 850))
-        self.frame_noKeg_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_noKeg_2.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_noKeg_2.setObjectName("frame_noKeg_2")
-
-         # Display Keg Image
-        self.label_n2 = QtWidgets.QLabel(self.frame_noKeg_2)
-        self.label_n2.setGeometry(QtCore.QRect(30, 200, 400, 530))
-        self.label_n2.setText("")
-        self.label_n2.setPixmap(QtGui.QPixmap("Keg.png"))
-        self.label_n2.setScaledContents(True)
-        self.label_n2.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_n2.setObjectName("label_n2")
-        
-        # Create Background for Fill Level Progress Bar
-        self.nKeg_Fill_Level_2 = QtWidgets.QLabel(self.frame_noKeg_2)
-        self.nKeg_Fill_Level_2.setGeometry(QtCore.QRect(215, 267, 40, 434))
-        self.nKeg_Fill_Level_2.setStyleSheet(FrameStyle)
-        self.nKeg_Fill_Level_2.setObjectName("nKeg_Fill_Level_2")'''      
-        
+            
         
 
         self.button = QtWidgets.QPushButton(self.frame_main)

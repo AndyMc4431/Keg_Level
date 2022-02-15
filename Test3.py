@@ -104,22 +104,37 @@ class Window(QMainWindow, Ui_MainWindow):
 		# Check _Active status of each keg and show or hide keg data accordingly
 		if _Keg_Data[0]._Active:
 			self.frame_Keg_0.show()
-			#self.frame_noKeg_0.hide()
+			self.Beer_Label1[0].setText(_Keg_Data[0]._Name1)
+			self.Beer_Label2[0].setText(_Keg_Data[0]._Name2)
+			self.frame_2.show()
+			self.frame_3.show()
 		else:
-			self.frame_Keg_0.hide()
-			#self.frame_noKeg_0.show()
+			self.Beer_Label1[0].setText("Empty")
+			self.Beer_Label2[0].setText("Keg")
+			self.frame_2.hide()
+			self.frame_3.hide()
 		if _Keg_Data[1]._Active:
 			self.frame_Keg_1.show()
-			#self.frame_noKeg_1.hide()
+			self.Beer_Label1[1].setText(_Keg_Data[1]._Name1)
+			self.Beer_Label2[1].setText(_Keg_Data[1]._Name2)
+			self.frame_6.show()
+			self.frame_7.show()
 		else:
-			self.frame_Keg_1.hide()
-			#self.frame_noKeg_1.show()
+			self.Beer_Label1[1].setText("Empty")
+			self.Beer_Label2[1].setText("Keg")
+			self.frame_6.hide()
+			self.frame_7.hide()
 		if _Keg_Data[2]._Active:
 			self.frame_Keg_2.show()
-			#self.frame_noKeg_2.hide()
+			self.Beer_Label1[2].setText(_Keg_Data[2]._Name1)
+			self.Beer_Label2[2].setText(_Keg_Data[2]._Name2)
+			self.frame_8.show()
+			self.frame_9.show()
 		else:
-			self.frame_Keg_2.hide()
-			#self.frame_noKeg_2.show()
+			self.Beer_Label1[2].setText("Empty")
+			self.Beer_Label2[2].setText("Keg")
+			self.frame_8.hide()
+			self.frame_9.hide()
 		
 		
 	
