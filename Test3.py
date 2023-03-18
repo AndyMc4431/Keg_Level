@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QProgressBar, QPushButton
 from PyQt5.QtGui import *
 from PyQt5.QtCore import QDate
 # 
-
+# Set up location of source code for main window and Setup dialog window
 from Keg_Level import Ui_MainWindow
 from Setup_Dialog import Ui_Setup_Dialog
 
