@@ -122,7 +122,7 @@ class Window(QMainWindow, Ui_MainWindow):
 		Keg_Capacity_Tuple = [224, 384, 640]  # Capacity of 1.75, 3 and 5 gallon kegs
 
 		try:
-			with open('hardware.csv', 'r') as csv_file:
+			with open('Hardware.csv', 'r') as csv_file:
 				Hardware_Reader = csv.reader(csv_file, delimiter = ',')
 				line = 0
 
